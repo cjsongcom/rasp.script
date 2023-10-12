@@ -191,11 +191,11 @@ else
   else
 
     if [ ${fan_oper} -eq 1 ]; then
-      sudo uhubctl -l ${USB_HUB_FOR_FAN} -d 2 -w 2 -a 1
+      sudo uhubctl -l ${USB_HUB_FOR_FAN} -d 2 -w 2 -a 1  1>/dev/null
       add_log "FAN_ON" "${COMM_MSG}"
 
     else
-      sudo uhubctl -l ${USB_HUB_FOR_FAN} -d 2 -w 2 -a 0	    
+      sudo uhubctl -l ${USB_HUB_FOR_FAN} -d 2 -w 2 -a 0	 1>/dev/null   
       add_log "FAN_OFF" "${COMM_MSG}"
 
     fi
