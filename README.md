@@ -21,9 +21,10 @@
   
 $ crontab -e
 # excute every 5 minute
-# > turn on fan at temperature 55 
-# > turn off fan at temperature 40
-*/5 * * * * /home/pi/fan-man.sh  55   40
+# > 55: turn on fan at temperature  
+# > 40: turn off fan at temperature
+# > >/dev/null 2>&1 : disable cron emails (cat /var/email/pi)
+*/5 * * * * /home/pi/fan-man.sh >/dev/null 2>&1   55   40
 
 </code>
 </pre>
