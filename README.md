@@ -2,6 +2,9 @@
 
 
 # create fan-man.sh
+
+[fan-man.sh](https://github.com/cjsongcom/rasp.script/blob/manage.temperature.usb-fan/fan-man.sh)
+
 <pre>
   <code>
     $ su - pi
